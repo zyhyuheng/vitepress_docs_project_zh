@@ -4,6 +4,7 @@ export default defineConfig({
   lang: 'zh-CN',
   title: 'VitePress',
   description: '基于 Vite 和 Vue 的静态站点生成器',
+  base: '/vitepress_docs_project_zh/',
 
   locales: {
     root: {
