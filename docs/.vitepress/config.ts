@@ -32,7 +32,12 @@ export default defineConfig({
 
   themeConfig: {
     nav: [
-      { text: '示例', link: '/example' }
+      { text: '示例', link: '/example' },
+      { text: '参考', 
+        items: [
+          { text: 'java8 Stream中方法示例', link: '/java8 Stream中方法示例' }
+        ]
+      }
     ],
 
     sidebar: [
