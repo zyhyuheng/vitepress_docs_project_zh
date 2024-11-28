@@ -5,6 +5,8 @@ export default defineConfig({
   title: 'VitePress',
   description: '基于 Vite 和 Vue 的静态站点生成器',
   base: '/vitepress_docs_project_zh/',
+  cleanUrls: true,
+  lastUpdated: true,
 
   locales: {
     root: {
@@ -17,12 +19,18 @@ export default defineConfig({
       link: '/en/',
       themeConfig: {
         nav: [
-          { text: 'Example', link: '/en/example' }
+          { text: 'Example', link: '/en/example' },
+          { text: 'Reference', 
+            items: [
+              { text: 'Example of Methods in Java8 Stream', link: '/en/java8 Stream中方法示例' }
+            ]
+          }
         ],
         sidebar: [
           {
             items: [
-              { text: 'Example', link: '/en/example' }
+              { text: 'Example', link: '/en/example' },
+              { text: 'Example of Methods in Java8 Stream', link: '/en/java8 Stream中方法示例' }
             ]
           }
         ]
