@@ -39,6 +39,13 @@ export default defineConfig({
   },
 
   themeConfig: {
+    lastUpdated: {
+      text: '最后更新时间',
+      formatOptions: {
+        dateStyle: 'full',
+        timeStyle: 'medium'
+      }
+    },
     nav: [
       { text: '示例', link: '/example' },
       { text: '参考', 
